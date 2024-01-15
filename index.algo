@@ -1,0 +1,9 @@
+ALGORITHM calculator
+VAR
+    num1,num2, sum : INTEGER;
+BEGIN
+    read(num1);
+    read(num2);
+    sum=num1+num2;
+    write(sum)
+END

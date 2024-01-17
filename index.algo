@@ -1,9 +1,29 @@
-ALGORITHM calculator
+ALGORITHM Teslim
 VAR
-    num1,num2, sum : INTEGER;
+        sentence: STRING
+        i: INTEGER;=0
+        word :INTEGER:=1;
+        vowels: INTEGER:=0
+        CHAR-1: INTEGER:=1;
 BEGIN
-    read(num1);
-    read(num2);
-    sum=num1+num2;
-    write(sum)
+    read(sentence):
+    WHILE (sentence[There is a lot wrong with this algorithm.]) DO
+        CHAR-1=CHAR+1
+        IF (sentence[There is a lot wrong with this algorithm.]=" ") THEN
+            word:= word+1
+        END_IF
+        SWITCH (sentence[There is a lot wrong with this algorithm.]) DO
+            case "a" :
+            case "e" :
+            case "i" :
+            case "o" :
+            case "u" : vowels := vowels + 1 break
+
+        END_SWITCH
+        sentence=sentence+1
+    END_WHILE
+    write(sentence)
+    write(word)
+    write(vowels)
+    write(CHAR-1)
 END

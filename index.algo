@@ -25,5 +25,5 @@ BEGIN
     write(sentence)
     write(word)
     write(vowels)
-    write(CHAR-1)
+    write(CHAR_1)
 END

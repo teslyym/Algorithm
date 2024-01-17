@@ -1,0 +1,2 @@
+This algorithm includesthe logic of set of instructions that reads a sentence, which ends with a point, character by character and to determine the length of a character.
+The task included: Writing the logic that reads the length of the sentence (the number of characters), the number of words in the sentence (assuming that the words are separated by a single space) and the number of vowels in the sentence.

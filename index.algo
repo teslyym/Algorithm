@@ -4,15 +4,14 @@ VAR
         i: INTEGER;=0
         word :INTEGER:=1;
         vowels: INTEGER:=0
-        CHAR-1: INTEGER:=1;
+        CHAR_1: INTEGER:=1;
 BEGIN
-    read(sentence):
-    WHILE (sentence[There is a lot wrong with this algorithm.]) DO
-        CHAR-1=CHAR+1
-        IF (sentence[There is a lot wrong with this algorithm.]=" ") THEN
+    Read(sentence):
+    WHILE (sentence[i]) DO
+        IF (sentence[i]=" ") THEN
             word:= word+1
         END_IF
-        SWITCH (sentence[There is a lot wrong with this algorithm.]) DO
+        SWITCH (sentence[i]) DO
             case "a" :
             case "e" :
             case "i" :
@@ -20,8 +19,9 @@ BEGIN
             case "u" : vowels := vowels + 1 break
 
         END_SWITCH
-        sentence=sentence+1
+        i=i+1
     END_WHILE
+        CHAR_1:= i +1
     write(sentence)
     write(word)
     write(vowels)

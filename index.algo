@@ -1,29 +1,29 @@
 ALGORITHM Teslim
 VAR
-        sentence: STRING
-        i: INTEGER;=0
-        word :INTEGER:=1;
-        vowels: INTEGER:=0
-        CHAR_1: INTEGER:=1;
+    sentence: STRING
+    i: INTEGER := 1;  // Initialize i to 1
+    word: INTEGER := 1;  // Initialize word count to 1 for the first word
+    vowels: INTEGER := 0;  // Initialize vowel count to 0
+    CHAR_1: INTEGER := 1;  // Initialize CHAR_1 to 1
 BEGIN
-    Read(sentence):
-    WHILE (sentence[i]) DO
-        IF (sentence[i]=" ") THEN
-            word:= word+1
+    Read(sentence);  // Input the sentence from the user
+    
+    WHILE i <= LENGTH(sentence) DO  // Loop through each character in the sentence
+        IF sentence[i] = " " THEN
+            word := word + 1;  // Increment word count when a space is encountered (assumes words are separated by spaces)
         END_IF
-        SWITCH (sentence[i]) DO
-            case "a" :
-            case "e" :
-            case "i" :
-            case "o" :
-            case "u" : vowels := vowels + 1 break
 
+        SWITCH sentence[i] DO
+            CASE "a", "e", "i", "o", "u": vowels := vowels + 1;  // Increment vowel count for each vowel
         END_SWITCH
-        i=i+1
+
+        i := i + 1;  // Move to the next character in the sentence
     END_WHILE
-        CHAR_1:= i +1
-    write(sentence)
-    write(word)
-    write(vowels)
-    write(CHAR_1)
+
+    CHAR_1 := i;  // Store the total number of characters in CHAR_1
+    
+    Write(sentence);  // Output the original sentence
+    Write(word);  // Output the number of words
+    Write(vowels);  // Output the number of vowels
+    Write(CHAR_1);  // Output the total number of characters
 END
